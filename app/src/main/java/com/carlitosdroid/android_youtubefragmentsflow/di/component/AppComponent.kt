@@ -1,6 +1,7 @@
 package com.carlitosdroid.android_youtubefragmentsflow.di.component
 
 import android.app.Application
+import com.carlitosdroid.android_youtubefragmentsflow.di.module.ActivityBindingModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -11,7 +12,8 @@ import dagger.android.support.DaggerApplication
  * @author carlosleonardocamilovargashuaman on 8/16/18.
  */
 @Component(modules = [
-    AndroidSupportInjectionModule::class
+    AndroidSupportInjectionModule::class,
+    ActivityBindingModule::class
 ])
 interface AppComponent : AndroidInjector<DaggerApplication> {
     @Component.Builder
