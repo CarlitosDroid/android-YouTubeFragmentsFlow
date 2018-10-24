@@ -11,4 +11,5 @@
     <string name="i_am_the_subscriptions_fragment">I\'m the Subscriptions Fragment</string>
     <string name="i_am_the_trending_fragment">I\'m the Trending Fragment</string>
     <string name="i_am_the_home_fragment">I\'m the Home Fragment</string>
+    <string name="title_activity_detail">DetailActivity</string>
 </resources>

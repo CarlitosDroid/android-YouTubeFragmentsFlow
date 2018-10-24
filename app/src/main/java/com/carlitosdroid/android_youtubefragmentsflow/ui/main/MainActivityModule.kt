@@ -1,5 +1,6 @@
 package com.carlitosdroid.android_youtubefragmentsflow.ui.main
 
+import com.carlitosdroid.android_youtubefragmentsflow.ui.home.HomeFragment
 import com.carlitosdroid.android_youtubefragmentsflow.ui.subscriptions.SubscriptionsFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

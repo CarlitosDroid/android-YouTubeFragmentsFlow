@@ -2,6 +2,7 @@ package com.carlitosdroid.android_youtubefragmentsflow.ui.subscriptions
 
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,10 +29,8 @@ class SubscriptionsFragment
         val subscriptionsAdapter = SubscriptionsAdapter(list) {
 
         }
-
         rvSubscriptions.adapter = subscriptionsAdapter
-
-
+        subscriptionsAdapter.notifyDataSetChanged()
     }
 
 

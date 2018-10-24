@@ -5,6 +5,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.util.Log
 import com.carlitosdroid.android_youtubefragmentsflow.R
+import com.carlitosdroid.android_youtubefragmentsflow.ui.home.HomeFragment
 import com.carlitosdroid.android_youtubefragmentsflow.ui.subscriptions.SubscriptionsFragment
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
