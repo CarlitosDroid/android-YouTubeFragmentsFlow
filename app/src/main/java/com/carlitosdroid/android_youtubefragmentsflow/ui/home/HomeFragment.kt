@@ -22,16 +22,13 @@ class HomeFragment
         super.onViewCreated(view, savedInstanceState)
 
         val list = mutableListOf<String>()
-        for (i in 1..20){
-            list.add("CARLITOSDROID $i")
+        for (i in 1..20) {
+            list.add("HOME $i")
         }
         val homeAdapter = HomeAdapter(list) {
             startActivity(Intent(context, DetailActivity::class.java))
         }
         rvHome.adapter = homeAdapter
         homeAdapter.notifyDataSetChanged()
-
     }
-
-
 }

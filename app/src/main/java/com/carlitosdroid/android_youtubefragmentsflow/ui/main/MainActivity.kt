@@ -76,10 +76,12 @@ class MainActivity : DaggerAppCompatActivity() {
             homeFragment = injectedHomeFragment
         }
 
-        supportFragmentManager.beginTransaction().apply {
-            add(R.id.contentFrame, homeFragment, TAG_FRAGMENT_HOME)
-            addToBackStack(TAG_BSS_MAIN)
-            commit()
+        if (!homeFragment.isAdded) {
+            supportFragmentManager.beginTransaction().apply {
+                add(R.id.contentFrame, homeFragment, TAG_FRAGMENT_HOME)
+                addToBackStack(TAG_BSS_MAIN)
+                commit()
+            }
         }
 
         bnvMain.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
